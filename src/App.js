@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Aplicación de notas V2</h1>
+      <h1>Aplicación de notas V3</h1>
       <FormularioDeNotas notas={notas} agregarNota={agregarNota} />
       <ListaDeNotas
         notas={notas}
