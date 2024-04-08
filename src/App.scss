@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(14%2c 93%2c 153%2c 1)'%3e%3c/rect%3e%3cpath d='M1260.160100111169 853.2193794277124L1309.7740304690544 1026.2437167735188 1482.7983678148607 976.6297864156332 1433.1844374569753 803.6054490698269z' fill='rgba(255%2c 238%2c 227%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M96.46205382502654 5.344943216400225L326.3517574016985 138.36410608602537 330.4037907176362-93.77672711061197z' fill='rgba(255%2c 238%2c 227%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M6.82797257325889 432.7522558444475L143.45730546151435 601.475430527435 312.18048014450187 464.84609763917956 175.5511472562464 296.12292295619204z' fill='rgba(255%2c 238%2c 227%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1766.2693000356005-99.44242369936003L1661.742060888326 135.3295993000987 2001.0413230350591 5.084815447914366z' fill='rgba(255%2c 238%2c 227%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M869.4416837045334 590.0005394018071L1072.910728757292 499.41028397198414 982.320473327469 295.9412389192255 778.8514282747103 386.53149434904856z' fill='rgba(255%2c 238%2c 227%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1727.508%2c178.289C1761.037%2c178.899%2c1790.954%2c159.56%2c1808.627%2c131.06C1827.412%2c100.768%2c1835.319%2c63.123%2c1818.368%2c31.768C1800.685%2c-0.941%2c1764.652%2c-20.688%2c1727.508%2c-18.99C1692.855%2c-17.406%2c1665.921%2c8.656%2c1649.979%2c39.465C1635.408%2c67.624%2c1635.886%2c100.518%2c1651.345%2c128.199C1667.225%2c156.633%2c1694.945%2c177.697%2c1727.508%2c178.289' fill='rgba(255%2c 238%2c 227%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M162.95136445430387 443.08276303302307L509.47176507115194 517.0831797021935 418.91153603761086 220.87401743731277z' fill='rgba(255%2c 238%2c 227%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1361.0051677804413 957.5081369762345L1675.6035919583778 929.984341297545 1648.0797962796885 615.3859171196084 1333.481372101752 642.909712798298z' fill='rgba(255%2c 238%2c 227%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  box-sizing: border-box;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+
+  h1 {
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(224, 224, 224);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+.Nota {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+
+  .acciones button {
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &.boton-completada {
+      background-color: rgba(148, 255, 232, 0.7);
+      &:hover {
+        background-color: rgba(148, 255, 232, 0.2);
+      }
+    }
+    &.boton-eliminar {
+      background-color: rgba(255, 148, 148, 0.7);
+      &:hover {
+        background-color: rgba(255, 148, 148, 0.2);
+      }
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  .descripcion {
+    font-size: 1.5rem;
+    color: #555;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  &.completada {
+    opacity: 0.5;
+  }
+}
+  
+.ListaDeNotas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.FormularioDeNotas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  
+  input, textarea {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease-in-out;
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 10px rgba(105, 103, 103, 0.5);
+    }
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
